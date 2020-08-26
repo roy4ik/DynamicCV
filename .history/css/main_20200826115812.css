@@ -1,0 +1,22 @@
+body {
+    background-color: darkgray;
+}
+
+.center1 {
+    /* margin:auto; */
+    float: left;
+    text-align: center;
+}
+
+.btn1 {
+    width: 49%;
+}
+
+
+/* :root {
+    --main-bg-color: black;
+}
+
+.container {
+    background-Color: var(--main-bg-color)
+} */
