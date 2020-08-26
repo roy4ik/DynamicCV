@@ -1,17 +1,20 @@
-body {
+body{
     background-color: darkgray;
 }
-
-.center1 {
+.center1{
     /* margin:auto; */
     text-align: center;
 }
+.btn1{
 
+<<<<<<< Updated upstream
 .btn1 {
     width: 50%;
     float: left;
+=======
+    width: 49%;
+>>>>>>> Stashed changes
 }
-
 
 /* :root {
     --main-bg-color: black;
