@@ -10,17 +10,20 @@ function loadSections(pageSections, pagesSectionTitle) {
     if (pageSections != null) {
         if (pageSections.includes(pagesSectionTitle)) {
             console.log("Loading section:" + " " + pagesSectionTitle);
-            existingScripts = document.getElementById("current-script");
+            existingScripts = document.getElementById("current-script-" + pagesSectionTitle)
             console.log("existing script: " + existingScripts);
             if (existingScripts != null) {
-                existingScripts.remove();
-                console.log("remove script tag")
-                mainContainer.innerHTML = "";
+                console.log(existingScripts.src);
+                if (existingScripts.src != ("/js/about.js")) {
+                    existingScripts.remove();
+                    console.log("remove script tag")
+                    mainContainer.innerHTML = "";
+                }
             } else {
                 for (key of pageSections) {
                     if (key === pagesSectionTitle) {
                         let script = document.createElement("script");
-                        script.id = "current-script";
+                        script.id = "current-script-" + pagesSectionTitle;
                         script.src = "./js/" + key + ".js"
                         mainContainer.appendChild(script);
                     }
