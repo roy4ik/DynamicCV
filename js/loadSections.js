@@ -1,24 +1,28 @@
-//Loading sections and populating main-container
+//Loading sections and populating mainContainer-container
 const pageSections = ["about", "app"]
 
 // Adds script source to page for selected pageSection only.
-let main = document.getElementsByTagName("main")[0];
+let mainContainer = document.getElementsByTagName("main")[0];
 let existingScripts = document.getElementById("current-script");
+console.log(mainContainer.childNodes)
 
 function loadSections(pageSections, pagesSectionTitle) {
     if (pageSections != null) {
         if (pageSections.includes(pagesSectionTitle)) {
             console.log("Loading section:" + " " + pagesSectionTitle);
-            console.log("existing script" + existingScripts);
+            existingScripts = document.getElementById("current-script");
+            console.log("existing script: " + existingScripts);
             if (existingScripts != null) {
                 existingScripts.remove();
-
+                console.log("remove script tag")
+                mainContainer.innerHTML = "";
+            } else {
                 for (key of pageSections) {
                     if (key === pagesSectionTitle) {
                         let script = document.createElement("script");
-                        script.id = "current-script"
+                        script.id = "current-script";
                         script.src = "./js/" + key + ".js"
-                        main.appendChild(script);
+                        mainContainer.appendChild(script);
                     }
                 }
             }
@@ -43,3 +47,5 @@ function loadContent(pagesSectionTitles) {
 }
 // console.log(pageSections)
 // loadSections(pageSections, "about")
+
+loadSections(pageSections, pageSections[0]);
