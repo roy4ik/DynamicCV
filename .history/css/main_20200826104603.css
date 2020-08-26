@@ -1,0 +1,5 @@
+:root {
+    --main-bg-color: black;
+}
+
+background-Color: var(--main-bg-color)
