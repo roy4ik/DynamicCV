@@ -2,16 +2,24 @@
 const pageSections = ["about", "app"]
 
 // Adds script source to page for selected pageSection only.
+let main = document.getElementsByTagName("main")[0];
+let existingScripts = document.getElementById("current-script");
+
 function loadSections(pageSections, pagesSectionTitle) {
     if (pageSections != null) {
         if (pageSections.includes(pagesSectionTitle)) {
             console.log("Loading section:" + " " + pagesSectionTitle);
-            let main = document.getElementsByTagName("main")[0];
-            for (key of pageSections) {
-                if (key === pagesSectionTitle) {
-                    let script = document.createElement("script");
-                    script.src = "./js/" + key + ".js"
-                    main.appendChild(script);
+            console.log("existing script" + existingScripts);
+            if (existingScripts != null) {
+                existingScripts.remove();
+
+                for (key of pageSections) {
+                    if (key === pagesSectionTitle) {
+                        let script = document.createElement("script");
+                        script.id = "current-script"
+                        script.src = "./js/" + key + ".js"
+                        main.appendChild(script);
+                    }
                 }
             }
         } else {
