@@ -14,42 +14,41 @@ async function loadSections(pageSections, pagesSectionTitle) {
             console.log("existing script: " + existingScripts);
             if (existingScripts != null) {
                 console.log(existingScripts.src);
-                if (existingScripts.src != ("/js/about.js") && (existingScripts.src != ("https://roy4ik.github.io/DynamicCV/js/about.js")) {
-                        existingScripts.remove();
-                        console.log("remove script tag")
-                        mainContainer.innerHTML = "";
-                    }
-                }
-                else {
-                    for (key of pageSections) {
-                        if (key === pagesSectionTitle) {
-                            let script = document.createElement("script");
-                            script.id = "current-script-" + pagesSectionTitle;
-                            script.src = "./js/" + key + ".js"
-                            mainContainer.appendChild(script);
-                        }
-                    }
+                if ((existingScripts.src != ("/js/about.js")) && (existingScripts.src != ("https://roy4ik.github.io/DynamicCV/js/about.js"))) {
+                    existingScripts.remove();
+                    console.log("remove script tag")
+                    mainContainer.innerHTML = "";
                 }
             } else {
-                let errorCode = -2;
-                let errorMsg = "page section does not exist"
-                let error = "Error" + " "
-                errorCode + " " + errorMsg
+                for (key of pageSections) {
+                    if (key === pagesSectionTitle) {
+                        let script = document.createElement("script");
+                        script.id = "current-script-" + pagesSectionTitle;
+                        script.src = "./js/" + key + ".js"
+                        mainContainer.appendChild(script);
+                    }
+                }
             }
-
         } else {
-            let errorCode = -1;
-            let errorMsg = "pageSections is null"
+            let errorCode = -2;
+            let errorMsg = "page section does not exist"
             let error = "Error" + " "
             errorCode + " " + errorMsg
         }
+
+    } else {
+        let errorCode = -1;
+        let errorMsg = "pageSections is null"
+        let error = "Error" + " "
+        errorCode + " " + errorMsg
     }
+}
 
 
-    function loadContent(pagesSectionTitles) {
+function loadContent(pagesSectionTitles) {
 
-    }
-    // console.log(pageSections)
-    // loadSections(pageSections, "about")
+}
+// console.log(pageSections)
+// loadSections(pageSections, "about")
 
-    loadSections(pageSections, pageSections[0]);
+loadSections(pageSections, pageSections[0]);
