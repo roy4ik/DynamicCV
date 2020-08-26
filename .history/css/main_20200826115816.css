@@ -4,12 +4,12 @@ body {
 
 .center1 {
     /* margin:auto; */
+    float: left;
     text-align: center;
 }
 
 .btn1 {
     width: 50%;
-    float: left;
 }
 
 
