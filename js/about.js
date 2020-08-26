@@ -1,4 +1,6 @@
 console.log("this is about js");
+console.log("this is about.js");
+console.log("this is about js");
 // // main
 // let main = document.getElementsByTagName("main")[0];
 
@@ -41,9 +43,9 @@ aboutContainer3.id = "aboutContainer3";
 aboutContainer1.style.display = "inline-flex"
 aboutContainer2.style.display = "inline-flex"
 
-AboutSectionaboutContainer.appendChild(aboutContainer1);
-AboutSectionaboutContainer.appendChild(aboutContainer2);
-AboutSectionaboutContainer.appendChild(aboutContainer3);
+aboutSectionContainer.aboutendChild(aboutContainer1);
+aboutSectionContainer.aboutendChild(aboutContainer2);
+aboutSectionContainer.aboutendChild(aboutContainer3);
 
 
 
@@ -53,16 +55,16 @@ let aboutNewDiv2 = document.createElement("div");
 let aboutNewDiv3 = document.createElement("div");
 let aboutNewDiv4 = document.createElement("div");
 
-aboutContainer1.appendChild(aboutNewDiv1);
-aboutContainer1.appendChild(aboutNewDiv2);
-// aboutContainer2.appendChild(aboutNewDiv3);
-// aboutContainer2.appendChild(aboutNewDiv4);
+aboutContainer1.aboutendChild(aboutNewDiv1);
+aboutContainer1.aboutendChild(aboutNewDiv2);
+// aboutContainer2.aboutendChild(aboutNewDiv3);
+// aboutContainer2.aboutendChild(aboutNewDiv4);
 
 
 
 aboutNewDiv2.style.margin = "20px"
 
-aboutNewDiv1.innerHTML = "<img id='aboutLogo' src='img/aboutLogo.svg' alt='aboutLogo'>"
+aboutNewDiv1.innerHTML = "<img id='aboutLogo' src='img/logo.svg' alt='logo'>"
 aboutNewDiv2.innerHTML = "\
 <h1>About</h1>\
 <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!orem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa! </p>"
