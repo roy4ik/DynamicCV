@@ -14,7 +14,7 @@ async function loadSections(pageSections, pagesSectionTitle) {
             console.log("existing script: " + existingScripts);
             if (existingScripts != null) {
                 console.log(existingScripts.src);
-                if (existingScripts.src != ("/js/about.js") || existingScripts.src != ("https://roy4ik.github.io/DynamicCV/js/about.js")) {
+                if ((existingScripts.src != ("/js/about.js")) && (existingScripts.src != ("https://roy4ik.github.io/DynamicCV/js/about.js"))) {
                     existingScripts.remove();
                     console.log("remove script tag")
                     mainContainer.innerHTML = "";
