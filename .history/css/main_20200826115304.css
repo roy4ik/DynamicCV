@@ -1,16 +1,14 @@
-body {
+body{
     background-color: darkgray;
 }
-
-.center1 {
+.center1{
     /* margin:auto; */
     text-align: center;
 }
+.btn1{
 
-.btn1 {
     width: 49%;
 }
-
 
 /* :root {
     --main-bg-color: black;
