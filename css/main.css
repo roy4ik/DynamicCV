@@ -8,18 +8,20 @@
 
 
 
-
-
-
-
-body{
-    background-color: var(--main-bg-color);
+#bg-img{
+    width: 100%;
 }
+
+/* body{
+    background-color: var(--main-bg-color);
+    background:url('/Users/daniel.ach/Desktop/DI/WEEK 3/Day 4-5/DynamicCV/img/bg-img.jpg')!important;
+    background-size: cover;
+} */
 footer{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;  
+    /* height: 2.5rem;   */
     text-align: center;
 }
 .center1{
@@ -30,6 +32,9 @@ footer{
 .border1{
     border-top: 1px solid var(--third-color);
     border-bottom: 1px solid var(--third-color);
+}
+.border2{
+    margin-top: 10px;
 
 }
 .btn1 {
@@ -51,3 +56,18 @@ footer{
 }
 
 
+@media only screen and (max-width: 720px) {
+    #container1 {
+      display: flex;
+      flex-direction: column;
+    
+     }
+     #container2 {
+        display: flex;
+        flex-direction: column;
+      
+       }
+          footer{
+         bottom:unset;
+     }
+   }
