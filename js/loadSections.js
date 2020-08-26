@@ -36,15 +36,6 @@ async function loadSections(pageSections) {
     }
 }
 
-
-// function loadContent(pagesSectionTitles) {
-
-// }
-// console.log(pageSections)
-// loadSections(pageSections, "about")
-
-loadSections(pageSections);
-
 function toggleSection(destination) {
     if (destination == "about") {
         // console.log("change to about")
@@ -62,3 +53,12 @@ function toggleSection(destination) {
     }
 
 }
+
+// function loadContent(pagesSectionTitles) {
+
+// }
+// console.log(pageSections)
+// loadSections(pageSections, "about")
+
+loadSections(pageSections);
+toggleSection('about')
