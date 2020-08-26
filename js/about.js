@@ -1,76 +1,77 @@
 console.log("this is about js");
+
 // // main
 // let main = document.getElementsByTagName("main")[0];
 
 // div
-let container1 = document.createElement("div");
-let container2 = document.createElement("div");
-let container3 = document.createElement("div");
+let aboutContainer1 = document.createElement("div");
+let aboutContainer2 = document.createElement("div");
+let aboutContainer3 = document.createElement("div");
 
 
-container1.style.backgroundColor = "var(--third-color)";
-container2.style.backgroundColor = "var(--third-color)";
-container3.style.backgroundColor = "var(--third-color)";
+aboutContainer1.style.backgroundColor = "var(--third-color)";
+aboutContainer2.style.backgroundColor = "var(--third-color)";
+aboutContainer3.style.backgroundColor = "var(--third-color)";
 
-container1.style.color="var(--main-bg-color)";
-// container2.style.color="var(--main-bg-color)";
-// container2.style.color="var(--main-bg-color)";
+aboutContainer1.style.color = "var(--main-bg-color)";
+// aboutContainer2.style.color="var(--main-bg-color)";
+// aboutContainer2.style.color="var(--main-bg-color)";
 
-container1.style.color = "var(--main-bg-color)"
-container2.style.color = "var(--main-bg-color)"
+aboutContainer1.style.color = "var(--main-bg-color)"
+aboutContainer2.style.color = "var(--main-bg-color)"
 
-container1.style.width = "100%";
-container1.style.height="85vh";
-container2.style.width = "100%";
-container2.style.height="50vh";
-container3.style.width = "100%";
-container3.style.height="45vh";
-
-
-container1.style.marginBottom = "20px"
-
-container1.style.display="inline-flex"
-container2.style.display="inline-flex"
-container3.style.display="inline-flex";
-
-container1.id="container1";
-container2.id="container2";
-container3.id="container3";
+aboutContainer1.style.width = "100%";
+aboutContainer1.style.height = "85vh";
+aboutContainer2.style.width = "100%";
+aboutContainer2.style.height = "50vh";
+aboutContainer3.style.width = "100%";
+aboutContainer3.style.height = "45vh";
 
 
-container1.style.display = "inline-flex"
-container2.style.display = "inline-flex"
+aboutContainer1.style.marginBottom = "20px"
 
-AboutSectionContainer.appendChild(container1);
-AboutSectionContainer.appendChild(container2);
-AboutSectionContainer.appendChild(container3);
+aboutContainer1.style.display = "inline-flex"
+aboutContainer2.style.display = "inline-flex"
+aboutContainer3.style.display = "inline-flex";
+
+aboutContainer1.id = "aboutContainer1";
+aboutContainer2.id = "aboutContainer2";
+aboutContainer3.id = "aboutContainer3";
 
 
+aboutContainer1.style.display = "inline-flex"
+aboutContainer2.style.display = "inline-flex"
 
-let newDiv1 = document.createElement("div");
-let newDiv2 = document.createElement("div");
-
-let newDiv3 = document.createElement("div");
-let newDiv4 = document.createElement("div");
-
-container1.appendChild(newDiv1);
-container1.appendChild(newDiv2);
-// container2.appendChild(newDiv3);
-// container2.appendChild(newDiv4);
+aboutSectionContainer.appendChild(aboutContainer1);
+aboutSectionContainer.appendChild(aboutContainer2);
+aboutSectionContainer.appendChild(aboutContainer3);
 
 
 
-newDiv2.style.margin = "20px"
+let aboutNewDiv1 = document.createElement("div");
+let aboutNewDiv2 = document.createElement("div");
 
-newDiv1.innerHTML = "<img id='logo' src='img/logo.svg' alt='logo'>"
-newDiv2.innerHTML = "\
+let aboutNewDiv3 = document.createElement("div");
+let aboutNewDiv4 = document.createElement("div");
+
+aboutContainer1.appendChild(aboutNewDiv1);
+aboutContainer1.appendChild(aboutNewDiv2);
+// aboutContainer2.appendChild(aboutNewDiv3);
+// aboutContainer2.appendChild(aboutNewDiv4);
+
+
+
+aboutNewDiv2.style.margin = "20px"
+
+aboutNewDiv1.innerHTML = "<img id='aboutLogo' src='img/logo.svg' alt='logo'>"
+aboutNewDiv2.innerHTML = "\
 <h1>About</h1>\
 <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!orem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa! </p>"
 
-// newDiv4.innerHTML = "";
-// newDiv3.innerHTML = "";
+// aboutNewDiv4.innerHTML = "";
+// aboutNewDiv3.innerHTML = "";
 
-container2.innerHTML="\
+aboutContainer2.innerHTML = "\
 <div id='card-roy' class='card mb-3' style='max-width: 50%;'>\
 <div class='row no-gutters'>\
   <div class='col-md-4'>\
@@ -85,7 +86,7 @@ container2.innerHTML="\
   </div>\
 </div>\
 </div>"
-container3.innerHTML="\
+aboutContainer3.innerHTML = "\
 <div id='card-daniel' class='card mb-3' style='max-width: 50%;'>\
 <div class='row no-gutters'>\
   <div class='col-md-8'>\
@@ -101,12 +102,7 @@ container3.innerHTML="\
 </div>\
 </div>"
 
-let logo = document.getElementById("logo");
-logo.style.height = "50vh";
-logo.style.marginTop = "10vh";
-logo.style.marginLeft = "5vw";
-
-
-
-
-
+let aboutLogo = document.getElementById("aboutLogo");
+aboutLogo.style.height = "50vh";
+aboutLogo.style.marginTop = "10vh";
+aboutLogo.style.marginLeft = "5vw";
