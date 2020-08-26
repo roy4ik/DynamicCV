@@ -6,7 +6,7 @@ let mainContainer = document.getElementsByTagName("main")[0];
 let existingScripts = document.getElementById("current-script");
 console.log(mainContainer.childNodes)
 
-function loadSections(pageSections, pagesSectionTitle) {
+async function loadSections(pageSections, pagesSectionTitle) {
     if (pageSections != null) {
         if (pageSections.includes(pagesSectionTitle)) {
             console.log("Loading section:" + " " + pagesSectionTitle);
@@ -14,7 +14,7 @@ function loadSections(pageSections, pagesSectionTitle) {
             console.log("existing script: " + existingScripts);
             if (existingScripts != null) {
                 console.log(existingScripts.src);
-                if (existingScripts.src != ("/js/about.js")) {
+                if (existingScripts.src != ("/js/about.js") || existingScripts.src != ("https://roy4ik.github.io/DynamicCV/js/about.js")) {
                     existingScripts.remove();
                     console.log("remove script tag")
                     mainContainer.innerHTML = "";
