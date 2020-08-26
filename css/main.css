@@ -1,73 +1,80 @@
 :root {
-    --main-bg-color:#ececec;
-    --main-color:#ff7171;
-    --second-color:#ffaa71;
-    --third-color:#343a40;
+    --main-bg-color: #ececec;
+    --main-color: #ff7171;
+    --second-color: #ffaa71;
+    --third-color: #343a40;
 }
 
+#logo-bG {
+    fill: green;
+}
 
-
-
-#bg-img{
+#bg-img {
     width: 100%;
 }
+
 
 /* body{
     background-color: var(--main-bg-color);
     background:url('/Users/daniel.ach/Desktop/DI/WEEK 3/Day 4-5/DynamicCV/img/bg-img.jpg')!important;
     background-size: cover;
 } */
-footer{
+
+footer {
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
     width: 100%;
     /* height: 2.5rem;   */
     text-align: center;
 }
-.center1{
+
+
+/* main {
+    height: 100%;
+} */
+
+.center1 {
     /* margin:auto; */
     text-align: center;
 }
 
-.border1{
+.border1 {
     border-top: 1px solid var(--third-color);
     border-bottom: 1px solid var(--third-color);
 }
-.border2{
-    margin-top: 10px;
 
+.border2 {
+    margin-top: 10px;
 }
+
 .btn1 {
     width: 50%;
     float: left;
     border-radius: 0;
 }
-.bg-primary1{
+
+.bg-primary1 {
     background-color: var(--main-color) !important;
-
 }
-.color1{
+
+.color1 {
     color: var(--third-color) !important;
-
 }
-.btn-outline-secondary{
 
+.btn-outline-secondary {
     background-color: var(--second-color);
 }
 
-
 @media only screen and (max-width: 720px) {
     #container1 {
-      display: flex;
-      flex-direction: column;
-    
-     }
-     #container2 {
         display: flex;
         flex-direction: column;
-      
-       }
-          footer{
-         bottom:unset;
-     }
-   }
+    }
+    #container2 {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        bottom: unset;
+    }
+}
