@@ -1,11 +1,7 @@
 //Loading sections and populating main-container
 const pageSections = {
-    about: {
-        sectionTitle: "About",
-    },
-    app: {
-        sectionTitle: "App",
-    }
+    about: "About",
+    app: "App"
 }
 
 // Adds script source to page for selected pageSection only.
@@ -39,5 +35,3 @@ function loadSections(pageSections, pagesSectionTitle) {
 function loadContent(pagesSectionTitles) {
 
 }
-console.log(pageSections)
-loadSections(pageSections, "about")

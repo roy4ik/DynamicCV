@@ -1,24 +1,23 @@
 //Loading sections and populating main-container
-const pageSections = {
+const pagesSectionTitles = {
     about: {
-        sectionTitle: "About",
-    },
+
+        console.log("loading about")
+    }
     app: {
-        sectionTitle: "App",
+        console.log("loading app")
     }
 }
 
 // Adds script source to page for selected pageSection only.
-function loadSections(pageSections, pagesSectionTitle) {
+function loadSections(pagesSectionTitles) {
     if (pageSections != null) {
         if (pageSections.includes(pagesSectionTitle)) {
-            console.log("Loading section:" + " " + pagesSectionTitle);
+            console.log("Loading section:" + " " + pageSections);
             for (key in pageSections) {
-                if (key === pagesSectionTitle) {
-                    let script = document.createElement("script");
-                    script.src = key + "./js/";
-                    document.body.appendChildElement(script);
-                }
+                let script = document.createElement("script");
+                script.src = pagesSectionTitle + "./js/";
+                document.body.appendChildElement(script);
             }
         } else {
             let errorCode = -2;
@@ -33,11 +32,11 @@ function loadSections(pageSections, pagesSectionTitle) {
         let error = "Error" + " "
         errorCode + " " + errorMsg
     }
+
 }
 
+let
 
 function loadContent(pagesSectionTitles) {
 
 }
-console.log(pageSections)
-loadSections(pageSections, "about")

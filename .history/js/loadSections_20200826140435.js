@@ -39,5 +39,5 @@ function loadSections(pageSections, pagesSectionTitle) {
 function loadContent(pagesSectionTitles) {
 
 }
-console.log(pageSections)
+
 loadSections(pageSections, "about")
