@@ -1,6 +1,5 @@
 console.log("this is about js");
-console.log("this is about.js");
-console.log("this is about js");
+
 // // main
 // let main = document.getElementsByTagName("main")[0];
 
@@ -43,9 +42,9 @@ aboutContainer3.id = "aboutContainer3";
 aboutContainer1.style.display = "inline-flex"
 aboutContainer2.style.display = "inline-flex"
 
-aboutSectionContainer.aboutendChild(aboutContainer1);
-aboutSectionContainer.aboutendChild(aboutContainer2);
-aboutSectionContainer.aboutendChild(aboutContainer3);
+aboutSectionContainer.appendChild(aboutContainer1);
+aboutSectionContainer.appendChild(aboutContainer2);
+aboutSectionContainer.appendChild(aboutContainer3);
 
 
 
@@ -55,10 +54,10 @@ let aboutNewDiv2 = document.createElement("div");
 let aboutNewDiv3 = document.createElement("div");
 let aboutNewDiv4 = document.createElement("div");
 
-aboutContainer1.aboutendChild(aboutNewDiv1);
-aboutContainer1.aboutendChild(aboutNewDiv2);
-// aboutContainer2.aboutendChild(aboutNewDiv3);
-// aboutContainer2.aboutendChild(aboutNewDiv4);
+aboutContainer1.appendChild(aboutNewDiv1);
+aboutContainer1.appendChild(aboutNewDiv2);
+// aboutContainer2.appendChild(aboutNewDiv3);
+// aboutContainer2.appendChild(aboutNewDiv4);
 
 
 

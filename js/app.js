@@ -42,9 +42,9 @@ appContainer3.id = "appContainer3";
 appContainer1.style.display = "inline-flex"
 appContainer2.style.display = "inline-flex"
 
-AppSectionContainer.appendChild(appContainer1);
-AppSectionContainer.appendChild(appContainer2);
-AppSectionContainer.appendChild(appContainer3);
+appSectionContainer.appendChild(appContainer1);
+appSectionContainer.appendChild(appContainer2);
+appSectionContainer.appendChild(appContainer3);
 
 
 

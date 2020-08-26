@@ -4,13 +4,13 @@ const pageSections = ["about", "app"]
 // Adds script source to page for selected pageSection only.
 let mainContainer = document.getElementsByTagName("main")[0];
 // sectionContainer - required to toggle without changing main
-let AboutSectionContainer = document.createElement("div");
-AboutSectionContainer.className = "about";
-mainContainer.appendChild(AboutSectionContainer);
+let aboutSectionContainer = document.createElement("div");
+aboutSectionContainer.className = "about";
+mainContainer.appendChild(aboutSectionContainer);
 
-let AppSectionContainer = document.createElement("div");
-AppSectionContainer.className = "app";
-mainContainer.appendChild(AppSectionContainer);
+let appSectionContainer = document.createElement("div");
+appSectionContainer.className = "app";
+mainContainer.appendChild(appSectionContainer);
 
 
 async function loadSections(pageSections) {
@@ -48,13 +48,13 @@ loadSections(pageSections);
 function toggleSection(destination) {
     if (destination == "about") {
         // console.log("change to about")
-        AppSectionContainer.style.display = "none"
-        AboutSectionContainer.style.display = "block";
+        appSectionContainer.style.display = "none"
+        aboutSectionContainer.style.display = "block";
 
     } else if (destination == "app") {
         // console.log("change to app")
-        AboutSectionContainer.style.display = "none";
-        AppSectionContainer.style.display = "block"
+        aboutSectionContainer.style.display = "none";
+        appSectionContainer.style.display = "block"
     } else {
         let errorCode = -2;
         let errorMsg = "Couldn't find destination"
