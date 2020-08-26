@@ -1,6 +1,6 @@
 console.log("this is about js");
-// main
-let main = document.getElementsByTagName("main")[0];
+// // main
+// let main = document.getElementsByTagName("main")[0];
 
 // div
 let container1 = document.createElement("div");
@@ -16,6 +16,8 @@ container1.style.color="var(--main-bg-color)";
 // container2.style.color="var(--main-bg-color)";
 // container2.style.color="var(--main-bg-color)";
 
+container1.style.color = "var(--main-bg-color)"
+container2.style.color = "var(--main-bg-color)"
 
 container1.style.width = "100%";
 container1.style.height="85vh";
@@ -25,7 +27,7 @@ container3.style.width = "100%";
 container3.style.height="45vh";
 
 
-container1.style.marginBottom="20px"
+container1.style.marginBottom = "20px"
 
 container1.style.display="inline-flex"
 container2.style.display="inline-flex"
@@ -35,9 +37,14 @@ container1.id="container1";
 container2.id="container2";
 container3.id="container3";
 
-main.appendChild(container1);
-main.appendChild(container2);
-main.appendChild(container3);
+
+container1.style.display = "inline-flex"
+container2.style.display = "inline-flex"
+
+AboutSectionContainer.appendChild(container1);
+AboutSectionContainer.appendChild(container2);
+AboutSectionContainer.appendChild(container3);
+
 
 
 let newDiv1 = document.createElement("div");
@@ -53,10 +60,10 @@ container1.appendChild(newDiv2);
 
 
 
-newDiv2.style.margin="20px"
+newDiv2.style.margin = "20px"
 
 newDiv1.innerHTML = "<img id='logo' src='img/logo.svg' alt='logo'>"
-newDiv2.innerHTML="\
+newDiv2.innerHTML = "\
 <h1>About</h1>\
 <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!orem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa! </p>"
 
@@ -95,9 +102,9 @@ container3.innerHTML="\
 </div>"
 
 let logo = document.getElementById("logo");
-logo.style.height="50vh";
-logo.style.marginTop="10vh";
-logo.style.marginLeft="5vw";
+logo.style.height = "50vh";
+logo.style.marginTop = "10vh";
+logo.style.marginLeft = "5vw";
 
 
 
