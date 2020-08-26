@@ -7,6 +7,7 @@ let mainContainer = document.getElementsByTagName("main")[0];
 let AboutSectionContainer = document.createElement("div");
 AboutSectionContainer.className = "about";
 mainContainer.appendChild(AboutSectionContainer);
+
 let AppSectionContainer = document.createElement("div");
 AppSectionContainer.className = "app";
 mainContainer.appendChild(AppSectionContainer);
@@ -37,9 +38,9 @@ async function loadSections(pageSections, pagesSectionTitle) {
 }
 
 
-function loadContent(pagesSectionTitles) {
+// function loadContent(pagesSectionTitles) {
 
-}
+// }
 // console.log(pageSections)
 // loadSections(pageSections, "about")
 
@@ -47,12 +48,14 @@ loadSections(pageSections, pageSections[0]);
 
 function toggleSection(destination) {
     if (destination == "about") {
-        AppSectionContainer.display = "none"
-        AboutSectionContainer.display = "block";
+        // console.log("change to about")
+        AppSectionContainer.style.display = "none"
+        AboutSectionContainer.style.display = "block";
 
     } else if (destination == "app") {
-        AboutSectionContainer.display = "none";
-        AppSectionContainer.display = "block"
+        // console.log("change to app")
+        AboutSectionContainer.style.display = "none";
+        AppSectionContainer.style.display = "block"
     } else {
         let errorCode = -2;
         let errorMsg = "Couldn't find destination"
