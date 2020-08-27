@@ -12,16 +12,17 @@
 #bg-img {
     width: 100%;
 }
-#card-daniel{
+
+#card-daniel {
     text-align: right;
     margin-left: auto;
 }
-.card{
+
+.card {
     background-color: var(--second-color) !important;
 }
 
-
-body{
+body {
     background-color: var(--main-color);
 }
 
@@ -72,13 +73,18 @@ footer {
 }
 
 @media only screen and (max-width: 720px) {
-    #container1 {
+    #aboutContainer1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: unset !important;
+    }
+    #aboutContainer2 {
         display: flex;
         flex-direction: column;
     }
-    #container2 {
-        display: flex;
-        flex-direction: column;
+    #aboutContainer3 {
+        height: unset !important;
     }
     footer {
         bottom: unset;
