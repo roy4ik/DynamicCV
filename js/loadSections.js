@@ -1,7 +1,7 @@
 //Loading sections and populating mainContainer-container
 const pageSections = ["about", "app"]
 
-// Adds script source to page for selected pageSection only.
+
 let mainContainer = document.getElementsByTagName("main")[0];
 // sectionContainer - required to toggle without changing main
 let aboutSectionContainer = document.createElement("div");
@@ -14,6 +14,7 @@ mainContainer.appendChild(appSectionContainer);
 
 
 async function loadSections(pageSections) {
+    // Adds script source to page for selected pageSection only.
     if (pageSections != null) {
         for (key of pageSections) {
             console.log("Loading section:" + " " + key);
@@ -22,13 +23,7 @@ async function loadSections(pageSections) {
             script.id = "current-script-" + key;
             script.src = "./js/" + key + ".js"
             mainContainer.appendChild(script);
-
         }
-        // } else {
-        //     let errorCode = -2;
-        //     let errorMsg = "page section does not exist"
-        //     console.log(errorCode + " " + errorMsg)
-        // }
     } else {
         let errorCode = -1;
         let errorMsg = "pageSections is null"
@@ -37,6 +32,7 @@ async function loadSections(pageSections) {
 }
 
 function toggleSection(destination) {
+    //toggling section that is being displayed / setting other sections to display none
     if (destination == "about") {
         // console.log("change to about")
         appSectionContainer.style.display = "none"
@@ -53,12 +49,6 @@ function toggleSection(destination) {
     }
 
 }
-
-// function loadContent(pagesSectionTitles) {
-
-// }
-// console.log(pageSections)
-// loadSections(pageSections, "about")
 
 loadSections(pageSections);
 toggleSection('about')
