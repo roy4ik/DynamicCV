@@ -44,12 +44,13 @@ footer {
     /* margin-left: 100%; */
 }
 
-.multiselect-input {
+/* .multiselect-input {
     margin-left: 100% !important;
-}
+} */
 
 #selectContainer {
     margin: auto !important;
+    text-align: center;
 }
 
 .center1 {
