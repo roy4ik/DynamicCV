@@ -24,11 +24,10 @@
 
 body {
     background-color: var(--main-color);
-
 }
 
 footer {
-    position: absolute;
+    /* position: absolute; */
     /* bottom: 0; */
     width: 100%;
     /* height: 2.5rem;   */
@@ -88,12 +87,11 @@ footer {
     footer {
         bottom: unset;
     }
-    #card-daniel{
+    #card-daniel {
         margin-top: 10em;
         max-width: unset !important;
     }
-    #card-roy{
+    #card-roy {
         max-width: unset !important;
-
     }
 }

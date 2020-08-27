@@ -12,8 +12,7 @@ let appSectionContainer = document.createElement("div");
 appSectionContainer.className = "app";
 mainContainer.appendChild(appSectionContainer);
 
-
-async function loadSections(pageSections) {
+function loadSections(pageSections) {
     // Adds script source to page for selected pageSection only.
     if (pageSections != null) {
         for (key of pageSections) {
@@ -51,4 +50,4 @@ function toggleSection(destination) {
 }
 
 loadSections(pageSections);
-toggleSection('about')
+toggleSection('about');
