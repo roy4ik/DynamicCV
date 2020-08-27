@@ -65,7 +65,7 @@ AppNewDiv2.style.margin = "20px"
 
 AppNewDiv1.innerHTML = "<img id='appLogo' src='img/logo.svg' alt='logo'>"
 AppNewDiv2.innerHTML = "\
-<h1>About</h1>\
+<h1>HEYYYY</h1>\
 <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!orem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa! </p>"
 
 // AppNewDiv4.innerHTML = "";
