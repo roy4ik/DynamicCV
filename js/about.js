@@ -14,8 +14,6 @@ aboutContainer3.style.backgroundColor = "var(--third-color)";
 
 aboutContainer1.style.color = "var(--main-bg-color)";
 
-
-
 aboutContainer1.style.width = "100%";
 aboutContainer1.style.height = "85vh";
 aboutContainer2.style.width = "100%";
