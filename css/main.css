@@ -12,16 +12,17 @@
 #bg-img {
     width: 100%;
 }
-#card-daniel{
+
+#card-daniel {
     text-align: right;
     margin-left: auto;
 }
-.card{
+
+.card {
     background-color: var(--second-color) !important;
 }
 
-
-body{
+body {
     background-color: var(--main-color);
 }
 
