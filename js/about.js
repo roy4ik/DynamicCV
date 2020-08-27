@@ -14,15 +14,18 @@ aboutContainer3.style.backgroundColor = "var(--third-color)";
 
 aboutContainer1.style.color = "var(--main-bg-color)";
 
-aboutContainer1.style.color = "var(--main-bg-color)"
-aboutContainer2.style.color = "var(--main-bg-color)"
+
 
 aboutContainer1.style.width = "100%";
 aboutContainer1.style.height = "85vh";
 aboutContainer2.style.width = "100%";
-aboutContainer2.style.height = "50vh";
+aboutContainer2.style.height = "fit-content";
+aboutContainer3.style.height = "22em";
+
 aboutContainer3.style.width = "100%";
-aboutContainer3.style.height = "45vh";
+aboutContainer3.style.height = "fit-content";
+aboutContainer3.style.height = "22em";
+
 
 
 aboutContainer1.style.marginBottom = "20px"
