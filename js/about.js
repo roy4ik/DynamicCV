@@ -15,7 +15,7 @@ aboutContainer3.style.backgroundColor = "var(--third-color)";
 aboutContainer1.style.color = "var(--main-bg-color)";
 
 aboutContainer1.style.width = "100%";
-aboutContainer1.style.height = "85vh";
+aboutContainer1.style.height = "85%";
 aboutContainer2.style.width = "100%";
 aboutContainer2.style.height = "fit-content";
 aboutContainer2.style.height = "22em";
@@ -66,7 +66,28 @@ aboutNewDiv2.style.margin = "20px"
 aboutNewDiv1.innerHTML = "<img id='aboutLogo' src='img/logo.svg' alt='logo'>"
 aboutNewDiv2.innerHTML = "\
 <h1>About</h1>\
-<p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!orem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa! </p>"
+<p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!orem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa! </p>\
+<section class='white-section' id='features'>\
+    <div class='container-fluid'>\
+      <div class='row row-features'>\
+        <div class='col-lg-4'>\
+          <i class='fas fa-check-circle icon-features fa-4x'></i>\
+          <h3 class='h3-features'>Easy to use.</h3>\
+          <p class='p-features'>So easy to use, even your dog could do it.</p>\
+        </div>\
+        <div id='bullseye' class='col-lg-4'>\
+          <i class='fas fa-bullseye icon-features fa-4x'></i>\
+          <h3 class='h3-features'>Elite Clientele</h3>\
+          <p class='p-features'>We have all the dogs, the greatest dogs.</p>\
+        </div>\
+        <div class='col-lg-4'>\
+          <i class='fas fa-heart icon-features fa-4x'></i>\
+          <h3 class='h3-features'>Guaranteed to work.</h3>\
+          <p class='p-features'>Find the love of your dog's life or your money back.</p>\
+        </div>\
+      </div>\
+    </div>\
+  </section>";
 
 
 
@@ -102,6 +123,6 @@ aboutContainer3.innerHTML = "\
 </div>"
 
 let aboutLogo = document.getElementById("aboutLogo");
-aboutLogo.style.height = "50vh";
-aboutLogo.style.marginTop = "10vh";
-aboutLogo.style.marginLeft = "5vw";
+aboutLogo.style.height = "26em";
+aboutLogo.style.marginTop = "4em";
+aboutLogo.style.marginLeft = "4em";

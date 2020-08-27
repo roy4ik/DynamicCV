@@ -7,7 +7,11 @@
     <title>DynamicCV</title>
     <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
     <link rel="icon" href="img/logo.svg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Oswald:wght@300;400&display=swap" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4790b262aa.js" crossorigin="anonymous"></script>
+
     <!-- BOOTSTRAP 5 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet " href="css/main.css ">
@@ -29,9 +33,6 @@
 
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link border2 color1" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link border1 color1" target="_blank" href="https://github.com/roy4ik">  GitHub Roy A. <ion-icon name="logo-github"></ion-icon></a>
                 </li>
@@ -60,6 +61,39 @@
       </select> -->
 
     </main>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3> <ion-icon name="send-sharp"></ion-icon> Contact us ! </h3>
+            <hr>
+            <address>
+              <strong>Email:</strong> <a href="mailto:#"> Isaac@theBestTeacher.Venezuela </a><br><br>
+              <strong>Phone:</strong> (555)123-4567
+            </address>
+          </div>
+
+          <div class="col-sm-8 contact-form">
+            <form id="contact" class="form form1" role="form">
+              <div class="row">
+                <div class="col-xs-6 col-md-6 form-group">
+                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
+                </div>
+                <div class="col-xs-6 col-md-6 form-group">
+                  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+                </div>
+              </div>
+              <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+              <br />
+              <div class="row">
+                <div class="col-xs-12 col-md-12 form-group">
+                  <button href="" class="btn btn-primary pull-right" type="button"><a id="anchor26" href="mailto:Yitzjak@developers.institute">Submit</a></button>
+            </form>
+          </div>
+        </div>
+    </section>
+
 
     <footer> <small>&copy; Roy A. & Daniel A. - Made with ❤️ - Copyright 2020. </small> </footer>
 
