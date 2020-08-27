@@ -83,75 +83,64 @@ appSectionContainer.appendChild(cvContainer);
 let parentSectionCard = ""
 let sectionCardName;
 
+
+
 function createSectionCard(object, key, sectionNumber, sectionNesting) {
     // console.log(object[key] + " is not an object, but is " + typeof(object[key]))
     if (object[key] != null) {
-        if (typeof object[key] === "object") {
-            iterate(object[key])
-        } else if (typeof object[key] === "string") {
-            // console.log(object[key] + " is string")
-            sectionCard = sectionCard + sectionNumber + sectionNesting;
-            console.log("section card is: " + sectionCard)
-            sectionCard = document.createElement("DIV");
-            sectionCard.classList.add("nesting-" + sectionNumber + "-" + sectionNesting);
-            sectionCard.innerHTML = object[key];
-            sectionCard.style.padding = "2em"
-            sectionCard.style.margin = "2em"
-            sectionCard.style.backgroundColor = "white"
-            console.log("sectionNesting for " + object[key] + " is: " + sectionNumber + "-" + sectionNesting)
-            if (sectionNesting == 1) {
-                // sectionCard.style.border = "2px solid black"
-                cvContainer.appendChild(sectionCard);
-                parentSectionCardClass = "nesting-" + sectionNumber + "-" + sectionNesting;
-            } else {
-                parentCard = document.getElementsByClassName(parentSectionCardClass)[0];
-                parentCard.appendChild(sectionCard);
-            }
-            // } else if (typeof object[key] === "array") {
-            //     console.log(object[key] + " is array")
-            //     for (elements of object) {
-            //         sectionCard = sectionCard + "-" + object[key];
-            //         console.log("section card is: " + sectionCard)
-            //         sectionCard = document.createElement("DIV");
-            //         sectionCard.innerHTML = object[key][elements];
-            //         cvContainer.appendChild(sectionCard);
-            //         if (sectionNesting > 1) {
-            //             parentSectionCard.appendChild(sectionCard);
-            //         }
-            //     }
-
-            // } else if (typeof object[key] === "number") {
-            //     console.log(object[key] + " is number")
-            //     for (elements of object[key]) {
-            //         sectionCard = sectionCard + "-" + object[key];
-            //         console.log("section card is: " + sectionCard)
-            //         sectionCard = document.createElement("DIV");
-            //         sectionCard.innerHTML = label[elements];
-            //         cvContainer.appendChild(sectionCard);
-            //     }
+        // console.log(object[key] + " is string")
+        sectionCard = sectionCard + sectionNumber + "-" + sectionNesting;
+        console.log("section card is: " + sectionCard)
+        sectionCard = document.createElement("DIV");
+        sectionCard.style.gridTemplateColumns = "repeat(auto-fill, minmax(50px, 300px))";
+        sectionCard.style.width = "100%";
+        sectionCard.classList.add("section-" + sectionNumber);
+        sectionCard.classList.add("nesting-" + sectionNesting);
+        sectionCard.innerHTML = "<div>" + object[key] + "</div>";
+        sectionCard.style.padding = "1em"
+        sectionCard.style.margin = "1em"
+        sectionCard.style.backgroundColor = "white"
+        console.log("sectionNesting for " + object[key] + " is: " + sectionNumber + "-" + sectionNesting)
+        if (sectionNesting == 1) {
+            // sectionCard.style.border = "2px solid black"
+            cvContainer.appendChild(sectionCard);
+            parentSectionCardClass = "section-" + sectionNumber + " " + "nesting-" + sectionNesting;
+            // console.log("parentClass " + parentSectionCardClass)
+        } else if (sectionNesting > 2) {
+            sectionNesting = 3;
+            parentCard = document.getElementsByClassName(parentSectionCardClass)[0];
+            parentCard.appendChild(sectionCard);
+            parentSectionCardClass = "section-" + sectionNumber + " " + "nesting-" + sectionNesting;
+            // console.log("parentClass " + parentSectionCardClass)
         } else {
-            let errorCode = -1;
-            let errorMsg = "object[key is null"
-            console.log(errorCode + " " + errorMsg)
+            parentCard = document.getElementsByClassName(parentSectionCardClass)[0];
+            parentCard.appendChild(sectionCard);
+            parentSectionCardClass = "section-" + sectionNumber + " " + "nesting-" + sectionNesting;
+            // console.log("parentClass " + parentSectionCardClass)
         }
+
+    } else {
+        let errorCode = -1;
+        let errorMsg = "object[key is null"
+        console.log(errorCode + " " + errorMsg)
     }
 }
+
 
 // createSectionCard(findSectionByLabel)
 let sectionNesting = 0;
 const iterate = (obj, sectionNumber) => {
-    Object.keys(obj).forEach(key => {
+    for (key in obj) {
         // console.log(`key: ${key}, value: ${obj[key]}, ` + typeof(obj[key]))
         if (typeof obj[key] === 'object') {
-            sectionNesting++;
-            // console.log("sectionNesting for " + obj + "is:" + sectionNesting)
             iterate(obj[key])
+            sectionNesting++;
         } else {
-
             sectionNesting++;
             createSectionCard(obj, key, sectionNumber, sectionNesting)
         }
-    })
+        sectionNesting++;
+    }
 }
 
 /// call with the sectiontitle and the number of the section incrementally / reset before calling again
