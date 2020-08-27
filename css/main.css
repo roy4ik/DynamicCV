@@ -1,17 +1,52 @@
+/* Root Colors */
 :root {
     --main-bg-color: #ececec;
     --main-color: #ff7171;
     --second-color: #ffaa71;
     --third-color: #343a40;
 }
-
+/* Contact form */
+#contact .card:hover i,#contact .card:hover h4{
+	color: #87d37c;
+}
+.contact-form {
+    margin-top:70px;
+}
+#contact{
+    padding-top: 2em !important;
+    padding-bottom:1em !important;
+    text-align: center;
+}
+#message{
+    margin-top:2em ;
+}
+#anchor26{
+    color:var(--main-bg-color);
+    text-decoration: none;
+}
+.form1{
+    margin-top: -6.5em;
+}
+/* Logo DynamicCV */
 #logo-bg {
     fill: green;
 }
-
-#bg-img {
-    width: 100%;
+/* Font awesome logos + hover */
+#bullseye{
+    padding-left: 2m !important;
+    padding-right: 2em;
 }
+.icon-features {
+    margin-bottom: 1rem;
+  }
+  
+  .icon-features:hover {
+    color: var(--main-color);
+  }
+  .container-fluid{
+    padding: 3% 15% 7%;
+    text-align: center;
+  }
 
 #card-daniel {
     text-align: right;
@@ -30,10 +65,11 @@ body {
 footer {
     /* position: absolute; */
     /* bottom: 0; */
-    width: 100%;
     /* height: 2.5rem;   */
+    color: var(--main-bg-color);
+    width: 100%;
     text-align: center;
-    background-color: var(--main-color);
+    background-color: var(--third-color);
 }
 
 #appContainer1 {
@@ -114,7 +150,7 @@ footer {
         bottom: unset;
     }
     #card-daniel {
-        margin-top: 10em;
+        margin-top: 20em;
         max-width: unset !important;
     }
     #card-roy {
