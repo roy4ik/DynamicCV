@@ -18,7 +18,7 @@ aboutContainer1.style.width = "100%";
 aboutContainer1.style.height = "85vh";
 aboutContainer2.style.width = "100%";
 aboutContainer2.style.height = "fit-content";
-aboutContainer3.style.height = "22em";
+aboutContainer2.style.height = "22em";
 
 aboutContainer3.style.width = "100%";
 aboutContainer3.style.height = "fit-content";
