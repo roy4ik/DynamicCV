@@ -26,7 +26,7 @@ experience = {
     },
     company: {
         companyName: "Knesset - The Parliament of Israel",
-        position1: {
+        position: {
             title: "Tour guide and diplomatic reception",
             year: {
                 start: [2015, 8],
@@ -38,7 +38,7 @@ experience = {
     },
     company: {
         companyName: "Gaming VC Corporation Limited",
-        position1: {
+        position: {
             title: "Customer and technical support",
             year: {
                 start: [2012, 8],
@@ -50,7 +50,7 @@ experience = {
     },
     company: {
         companyName: "Military Service - Air Force (IAF)",
-        position1: {
+        position: {
             title: "Combat Soldier - Arial Defense",
             year: {
                 start: [2011, 10],
@@ -72,9 +72,6 @@ experience = {
             skills: ["HTML", "PHP", "CSS", "SQL", "Adobe - Photoshop"],
             description: "",
         },
-    },
-    company: {
-        companyName: "Freelancer",
         position: {
             title: "Snowboarding Instructor",
             year: {
