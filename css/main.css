@@ -40,6 +40,22 @@ footer {
 /* main {
     height: 100%;
 } */
+#appContainer1{
+    margin: auto;
+}
+
+.multiselect-wrapper {
+    margin: 1em;
+    /* margin-left: 100%; */
+  }
+  .multiselect-input
+  {
+      margin-left: 100% !important;
+  }
+  
+  #selectContainer{
+    margin: auto !important;
+}
 
 .center1 {
     /* margin:auto; */
@@ -54,6 +70,10 @@ footer {
 .border2 {
     margin-top: 10px;
 }
+
+.row1{
+    height:1000px;
+  }
 
 .btn1 {
     width: 50%;
