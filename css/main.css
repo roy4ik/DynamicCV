@@ -24,6 +24,7 @@
 
 body {
     background-color: var(--main-color);
+    font-family: 'Alata', sans-serif;
 }
 
 footer {
@@ -90,8 +91,11 @@ footer {
 .btn-outline-secondary {
     background-color: var(--second-color);
 }
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Oswald:wght@300;400&display=swap');
 
-@media only screen and (max-width: 720px) {
+/* RESPONSIVENESS */
+@media only screen and (max-width: 765px) {
     #aboutContainer1 {
         display: flex;
         flex-direction: column;
