@@ -12,21 +12,22 @@
 #bg-img {
     width: 100%;
 }
-#card-daniel{
+
+#card-daniel {
     text-align: right;
     margin-left: auto;
 }
-.card{
+
+.card {
     background-color: var(--second-color) !important;
 }
 
-
-body{
+body {
     background-color: var(--main-color);
 }
 
 footer {
-    position: absolute;
+    /* position: absolute; */
     /* bottom: 0; */
     width: 100%;
     /* height: 2.5rem;   */
@@ -34,10 +35,22 @@ footer {
     background-color: var(--main-color);
 }
 
+#appContainer1 {
+    margin: auto;
+}
 
-/* main {
-    height: 100%;
-} */
+.multiselect-wrapper {
+    margin: 1em;
+    /* margin-left: 100%; */
+}
+
+.multiselect-input {
+    margin-left: 100% !important;
+}
+
+#selectContainer {
+    margin: auto !important;
+}
 
 .center1 {
     /* margin:auto; */
@@ -53,6 +66,10 @@ footer {
     margin-top: 10px;
 }
 
+.row1 {
+    height: 1000px;
+}
+
 .btn1 {
     width: 50%;
     float: left;
@@ -61,6 +78,8 @@ footer {
 
 .bg-primary1 {
     background-color: var(--main-color) !important;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .color1 {
@@ -72,15 +91,28 @@ footer {
 }
 
 @media only screen and (max-width: 720px) {
-    #container1 {
+    #aboutContainer1 {
         display: flex;
         flex-direction: column;
+        text-align: center;
+        height: unset !important;
     }
-    #container2 {
+    #aboutContainer2 {
         display: flex;
         flex-direction: column;
+        /* height: unset !important; */
+    }
+    #aboutContainer3 {
+        height: unset !important;
     }
     footer {
         bottom: unset;
+    }
+    #card-daniel {
+        margin-top: 10em;
+        max-width: unset !important;
+    }
+    #card-roy {
+        max-width: unset !important;
     }
 }

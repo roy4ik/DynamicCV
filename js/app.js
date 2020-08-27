@@ -1,108 +1,135 @@
-console.log("this is app.js");
-console.log("this is about js");
-// // main
-// let main = document.getElementsByTagName("main")[0];
-
-// div
+// creating content containers
 let appContainer1 = document.createElement("div");
-let appContainer2 = document.createElement("div");
-let appContainer3 = document.createElement("div");
+// let aboutContainer2 = document.createElement("div");
+// let aboutContainer3 = document.createElement("div");
 
-
+// setting container styles 
 appContainer1.style.backgroundColor = "var(--third-color)";
-appContainer2.style.backgroundColor = "var(--third-color)";
-appContainer3.style.backgroundColor = "var(--third-color)";
+// aboutContainer2.style.backgroundColor = "var(--third-color)";
+// aboutContainer3.style.backgroundColor = "var(--third-color)";
 
-appContainer1.style.color = "var(--main-bg-color)";
-// appContainer2.style.color="var(--main-bg-color)";
-// appContainer2.style.color="var(--main-bg-color)";
-
-appContainer1.style.color = "var(--main-bg-color)"
-appContainer2.style.color = "var(--main-bg-color)"
-
-appContainer1.style.width = "100%";
-appContainer1.style.height = "85vh";
-appContainer2.style.width = "100%";
-appContainer2.style.height = "50vh";
-appContainer3.style.width = "100%";
-appContainer3.style.height = "45vh";
-
-
-appContainer1.style.marginBottom = "20px"
-
-appContainer1.style.display = "inline-flex"
-appContainer2.style.display = "inline-flex"
-appContainer3.style.display = "inline-flex";
+//appending container into the aboutSectionContainer
+appSectionContainer.appendChild(appContainer1);
+// aboutSectionContainer.appendChild(aboutContainer2);
+// aboutSectionContainer.appendChild(aboutContainer3);
 
 appContainer1.id = "appContainer1";
-appContainer2.id = "appContainer2";
-appContainer3.id = "appContainer3";
 
 
-appContainer1.style.display = "inline-flex"
-appContainer2.style.display = "inline-flex"
-
-appSectionContainer.appendChild(appContainer1);
-appSectionContainer.appendChild(appContainer2);
-appSectionContainer.appendChild(appContainer3);
-
-
-
-let AppNewDiv1 = document.createElement("div");
-let AppNewDiv2 = document.createElement("div");
-
-let AppNewDiv3 = document.createElement("div");
-let AppNewDiv4 = document.createElement("div");
-
-appContainer1.appendChild(AppNewDiv1);
-appContainer1.appendChild(AppNewDiv2);
-// appContainer2.appendChild(AppNewDiv3);
-// appContainer2.appendChild(AppNewDiv4);
-
-
-
-AppNewDiv2.style.margin = "20px"
-
-AppNewDiv1.innerHTML = "<img id='appLogo' src='img/logo.svg' alt='logo'>"
-AppNewDiv2.innerHTML = "\
-<h1>About</h1>\
-<p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!orem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa! </p>"
-
-// AppNewDiv4.innerHTML = "";
-// AppNewDiv3.innerHTML = "";
-
-appContainer2.innerHTML = "\
-<div id='card-roy' class='card mb-3' style='max-width: 50%;'>\
-<div class='row no-gutters'>\
-  <div class='col-md-4'>\
-    <img src='https://ca.slack-edge.com/T7P4CAKAS-U0181B76SS0-64b92548bdd5-512' class='card-img' alt='...'>\
-  </div>\
-  <div class='col-md-8'>\
-    <div class='card-body'>\
-      <h5 class='card-title'>Roy Altstaedter</h5>\
-      <p class='card-text'>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\
-      <p class='card-text'><small class='text-muted'>Last updated 3 mins ago</small></p>\
-    </div>\
-  </div>\
-</div>\
-</div>"
-appContainer3.innerHTML = "\
-<div id='card-daniel' class='card mb-3' style='max-width: 50%;'>\
-<div class='row no-gutters'>\
-  <div class='col-md-8'>\
-    <div class='card-body'>\
-      <h5 class='card-title'>Daniel Ach</h5>\
-      <p class='card-text'>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\
-      <p class='card-text'><small class='text-muted'>Last updated 3 mins ago</small></p>\
-    </div>\
-  </div>\
-  <div class='col-md-4'>\
-    <img src='https://ca.slack-edge.com/T7P4CAKAS-U018A77P3PX-36c5c161090b-512' class='card-img' alt='...'>\
-  </div>\
-</div>\
+appContainer1.innerHTML = "\
+<div id='selectContainer'>\
+<select class='dropdown1' id='testSelect1' multiple>\
+<option value='1' selected>2020</option>\
+</select>\
+<select class='dropdown1' id='testSelect2' multiple>\
+  <option value='1' selected>Skills</option>\
+  <option value='2'>Item 2</option>\
+  <option value='3'>Item 3</option>\
+  <option value='4'>Item 4</option>\
+  <option value='5'>Item 5</option>\
+</select>\
+<select  class='dropdown1' id='testSelect3' multiple>\
+  <option value='1' selected>Company</option>\
+  <option value='2'>Item 2</option>\
+  <option value='3'>Item 3</option>\
+  <option value='4'>Item 4</option>\
+  <option value='5'>Item 5</option>\
+</select>\
+<select class='dropdown1' id='testSelect4' multiple>\
+<option value='1' selected>Position</option>\
+<option value='2'>Item 2</option>\
+<option value='3'>Item 3</option>\
+<option value='4'>Item 4</option>\
+<option value='5'>Item 5</option>\
+</select>\
+<select class='dropdown1' id='testSelect5' multiple>\
+  <option value='1' selected>Education</option>\
+  <option value='2'>Item 2</option>\
+  <option value='3'>Item 3</option>\
+  <option value='4'>Item 4</option>\
+  <option value='5'>Item 5</option>\
+</select>\
 </div>"
 
-let appLogo = document.getElementById("appLogo");
-appLogo.style.height = "50vh";
-appLogo.style.marginTop = "10vh";
-appLogo.style.marginLeft = "5vw";
+let selector = document.getElementById("testSelect1");
+
+for (amountOptions = 2019; amountOptions >= 1990; --amountOptions) {
+    let option = document.createElement("option");
+    option.value = amountOptions;
+    option.innerHTML = amountOptions;
+    option.selected = true;
+    selector.appendChild(option);
+}
+
+appContainer1.classList.add("m-auto");
+
+document.multiselect('#testSelect1');
+document.multiselect('#testSelect2');
+document.multiselect('#testSelect3');
+document.multiselect('#testSelect4');
+document.multiselect('#testSelect5');
+
+
+
+let sectionCard = "sectionCard";
+
+cvContainer = document.createElement("div");
+cvContainer.classList.add("cvContainer");
+cvContainer.style.display = "grid";
+cvContainer.style.gridTemplateColumns = "repeat(auto-fit, 250px;"
+cvContainer.style.width = "100%";
+appSectionContainer.appendChild(cvContainer);
+
+
+function createSectionCard(object, key) {
+    console.log(object[key] + " is not an object, but is " + typeof(object[key]))
+    if (typeof object[key] === "object") {
+        iterate(object[key])
+    } else if (typeof object[key] === "string") {
+        console.log(object[key] + " is string")
+        sectionCard = sectionCard + "-" + object[key];
+        console.log("section card is: " + sectionCard)
+        sectionCard = document.createElement("DIV");
+        sectionCard.innerHTML = object[key];
+        sectionCard.style.padding = "2em"
+        sectionCard.style.margin = "2em"
+        sectionCard.style.backgroundColor = "white"
+
+        cvContainer.appendChild(sectionCard);
+    } else if (typeof object[key] === "array") {
+        console.log(object[key] + " is array")
+        for (elements of object) {
+            sectionCard = sectionCard + "-" + object[key];
+            console.log("section card is: " + sectionCard)
+            sectionCard = document.createElement("DIV");
+            sectionCard.innerHTML = object[key][elements];
+            cvContainer.appendChild(sectionCard);
+        }
+
+    } else if (typeof object[key] === "number") {
+        console.log(object[key] + " is number")
+        for (elements of object[key]) {
+            sectionCard = sectionCard + "-" + object[key];
+            console.log("section card is: " + sectionCard)
+            sectionCard = document.createElement("DIV");
+            sectionCard.innerHTML = label[elements];
+            cvContainer.appendChild(sectionCard);
+        }
+    }
+}
+
+// createSecionCard(findSectionByLabel)
+let sectionNesting = 0;
+const iterate = (obj) => {
+    Object.keys(obj).forEach(key => {
+        console.log(`key: ${key}, value: ${obj[key]}, ` + typeof(obj[key]))
+        if (typeof obj[key] === 'object') {
+            iterate(obj[key])
+        } else {
+            createSectionCard(obj, key)
+        }
+    })
+}
+
+iterate(profile);
+// iterate(experience);
