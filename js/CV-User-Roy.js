@@ -3,28 +3,34 @@ console.log("CvSection loaded")
 // Classes for CV Sections
 experience = {
     sectionName: "Experience",
-    company: {
+    company1: {
         companyName: "Cornerstone OnDemand",
-        position: {
+        position1: {
             title: "Solution Consultant",
-            year: {
-                start: [2019, 10],
-                end: [2020, 3],
-            },
-            skills: ["HTML", "CSS", "Java-Script", "Pre-Sales", "Sales", "Public-Speaking", "Project-Management"],
-            description: "",
+            properties: {
+                year: {
+                    start: [2019, 10],
+                    end: [2020, 3],
+                },
+                sectionName: "Skills",
+                skills: ["HTML", "CSS", "Java-Script", "Pre-Sales", "Sales", "Public-Speaking", "Project-Management"],
+                description: "",
+            }
         },
-        position: {
+        position2: {
             title: "Dedicated Product Support Specialist",
-            year: {
-                start: [2017, 03],
-                end: [2019, 10],
-            },
-            skills: ["HTML", "CSS", "Java-Script", "Pre-Sales", "Sales", "Public-Speaking", "Project-Management", "Mentoring", "Technical Support", "LMS", "EPM", "ATS", "SCM", "CMS", "Salesforce", "Extensive knowledge in API debugging", "Managing of client relations and client enablement", "Technical troubleshooting and analysis", "Proficient knowledge of “Jira” and “Salesforce” solutions", "Successful delivery of product release projects", "Dedicated mentor for new hires"],
-            description: "",
+            properties: {
+                year: {
+                    start: [2017, 03],
+                    end: [2019, 10],
+                },
+                sectionName: "Skills",
+                skills: ["HTML", "CSS", "Java-Script", "Pre-Sales", "Sales", "Public-Speaking", "Project-Management", "Mentoring", "Technical Support", "LMS", "EPM", "ATS", "SCM", "CMS", "Salesforce", "Extensive knowledge in API debugging", "Managing of client relations and client enablement", "Technical troubleshooting and analysis", "Proficient knowledge of 'Jira' and 'Salesforce' solutions", "Successful delivery of product release projects", "Dedicated mentor for new hires"],
+                description: "",
+            }
         },
     },
-    company: {
+    company2: {
         companyName: "Knesset - The Parliament of Israel",
         position1: {
             title: "Tour guide and diplomatic reception",
@@ -32,11 +38,12 @@ experience = {
                 start: [2015, 8],
                 end: [2016, 2],
             },
+            sectionName: "Skills",
             skills: ["Public Speaking", "Proficient knowledge of diplomatic language and representation"],
             description: "",
         },
     },
-    company: {
+    company3: {
         companyName: "Gaming VC Corporation Limited",
         position1: {
             title: "Customer and technical support",
@@ -44,11 +51,12 @@ experience = {
                 start: [2012, 8],
                 end: [2013, 12],
             },
+            sectionName: "Skills",
             skills: ["Proficient customer relation skills", "Customer-Service", "Client Relations"],
             description: "",
         },
     },
-    company: {
+    company4: {
         companyName: "Military Service - Air Force (IAF)",
         position1: {
             title: "Combat Soldier - Arial Defense",
@@ -56,31 +64,31 @@ experience = {
                 start: [2011, 10],
                 end: [2012, 8],
             },
+            sectionName: "Skills",
             skills: [],
             description: "Honourably discharged due to injury",
         },
 
     },
-    company: {
+    company5: {
         companyName: "Freelancer",
-        position: {
+        position1: {
             title: "Web Designer",
             year: {
                 start: [2007, 8],
                 end: [201, 11],
             },
+            sectionName: "Skills",
             skills: ["HTML", "PHP", "CSS", "SQL", "Adobe - Photoshop"],
             description: "",
         },
-    },
-    company: {
-        companyName: "Freelancer",
-        position: {
+        position2: {
             title: "Snowboarding Instructor",
             year: {
                 start: [2006, 11],
                 end: [2011, 1],
             },
+            sectionName: "Skills",
             skills: "",
             description: "",
         },
