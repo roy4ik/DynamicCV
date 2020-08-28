@@ -5,6 +5,17 @@
     --second-color: #ffaa71;
     --third-color: #343a40;
 }
+
+
+/* about container */
+#aboutContainer2{
+    /* margin-top: 2em; */
+}
+#aboutContainer3{
+    /* margin-top: 2em; */
+    color: var(--third-color);
+}
+
 /* Iframe 1 */
 #iFrame1{
     height: 100em;
@@ -37,8 +48,7 @@
 }
 /* Font awesome logos + hover */
 #bullseye{
-    padding-left: 2m !important;
-    padding-right: 2em;
+    
 }
 .icon-features {
     margin-bottom: 1rem;
@@ -53,8 +63,19 @@
   }
 
 #card-daniel {
+    color: var(--third-color);
     text-align: right;
     margin-left: auto;
+    border-radius: 0;
+    border: none;
+    
+    /* margin-top: 1em; */
+}
+#card-roy{
+    color: var(--third-color);
+    border-radius: 0;
+    border-top:none ;
+    /* margin-top: 1em; */
 }
 
 .card {
