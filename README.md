@@ -6,4 +6,4 @@ https://roy4ik.github.io/DynamicCV/
 
 
 
-&copy; Roy A. & Daniel A.
+&copy; Roy A. & Daniel A. : https://github.com/MrAch26
