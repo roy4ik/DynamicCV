@@ -5,8 +5,17 @@
   --second-color: #ffaa71;
   --third-color: #343a40;
 }
-
-
+#bodyDiv{
+  border-right: 1px solid black;
+}
+#img26{
+  margin-left: 7em;
+  margin-top: 3em;
+}
+#title1{
+  margin-top: unset;
+  padding-top: unset;
+}
 body{
   background-color:var(--third-color); 
 }
