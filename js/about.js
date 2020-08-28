@@ -78,20 +78,12 @@ aboutNewDiv2.innerHTML = "\
         <div id='bullseye' class='col-lg-4'>\
           <i class='fas fa-bullseye icon-features fa-4x'></i>\
           <h3 class='h3-features'>Elite Clientele</h3>\
-<<<<<<< HEAD
-          <p class='p-features'>We have all the dogs, the greatest dogs.</p>\
-=======
           <p class='p-features'>We have all we want , the greatest CV.</p>\
->>>>>>> 678f4149dc09b1e95771a833784b3fad2cbf99d7
         </div>\
         <div class='col-lg-4'>\
           <i class='fas fa-heart icon-features fa-4x'></i>\
           <h3 class='h3-features'>Guaranteed to work.</h3>\
-<<<<<<< HEAD
-          <p class='p-features'>Find the love of your dog's life or your money back.</p>\
-=======
           <p class='p-features'>Find the love of your CV life or your money back.</p>\
->>>>>>> 678f4149dc09b1e95771a833784b3fad2cbf99d7
         </div>\
       </div>\
     </div>\
