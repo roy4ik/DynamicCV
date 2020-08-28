@@ -1,5 +1,5 @@
 //Loading sections and populating mainContainer-container
-const pageSections = ["about", "app"]
+const pageSections = ["about", "inputForm", "app"]
 
 
 let mainContainer = document.getElementsByTagName("main")[0];
@@ -32,13 +32,16 @@ function loadSections(pageSections) {
 
 function toggleSection(destination) {
     //toggling section that is being displayed / setting other sections to display none
+    contactSection = document.getElementById("contact");
     if (destination == "about") {
         // console.log("change to about")
+        contactSection.style.display = "block"
         appSectionContainer.style.display = "none"
         aboutSectionContainer.style.display = "block";
 
     } else if (destination == "app") {
         // console.log("change to app")
+        contactSection.style.display = "none"
         aboutSectionContainer.style.display = "none";
         appSectionContainer.style.display = "block"
     } else {
