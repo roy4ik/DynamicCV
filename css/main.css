@@ -79,6 +79,8 @@
     color: var(--third-color);
     border-radius: 0;
     border-top:none ;
+    border-bottom: none;
+    border-left: none;
     /* margin-top: 1em; */
 }
 
