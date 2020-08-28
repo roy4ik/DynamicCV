@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Lora|Oxygen|Roboto|Roboto+Slab|Ovo|Muli' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+   
+<div ng-app data-ng-init="name='Ryan Trimble'">
+
+    <div class="col1">
+      <h1><u>Resume Builder</u> </h1>
+      <h3>Choose Theme</h3>
+      <input type="radio" name="theme" ng-model="theme" value="default" selected checked>Default<br />
+      
+      <h3>Basic Information</h3>
+      <input type="text" ng-model="yourName" data-ng-bind="name" placeholder="Name" value="Ryan Trimble" class="floatlabel">
+      <input type="text" ng-model="streetAddress" placeholder="Street Address" class="floatlabel">
+      <input type="text" ng-model="city" placeholder="City" class="floatlabel">
+      <input type="text" ng-model="phoneNumber" placeholder="Phone Number" class="floatlabel">
+      <input type="text" ng-model="emailAddress" placeholder="Email Address" class="floatlabel">
+      <input type="text" ng-model="website" placeholder="Website" class="floatlabel">
+      
+      <h3>Mission</h3>
+      <textarea ng-model="mission" placeholder="Mission" class="floatlabel"> </textarea>
+      
+      <h3>Work Information</h3>
+      <input type="text" ng-model="employer" placeholder="Employer" class="floatlabel">
+      <input type="text" ng-model="location" placeholder="Location" class="floatlabel">
+      <input type="text" ng-model="time" placeholder="Time" class="floatlabel">
+      <input type="text" ng-model="shortDescription" placeholder="Short Description" class="floatlabel">
+      <input type="text" ng-model="jobTitle" placeholder="Job Title" class="floatlabel">
+      <button type="button" onclick="addWorkSection()">Add Section</button>
+
+      <h3>Skills</h3>
+      <input type="text" ng-model="Skill" placeholder="Enter your Skills" class="floatlabel">
+      
+      <h3>Job description</h3>
+      <textarea ng-model="jobDesc" placeholder="Job Description" class="floatlabel"> </textarea>
+      
+      
+    </div>
+    <div class="col2 default {{theme}}">
+      <h1>{{yourName}}</h1>
+      
+      <p>{{streetAddress}}, {{city}}, {{state}}</p>
+      <p>{{phoneNumber}}</p>
+      <p><a href="mailto:{{emailAddress}}">{{emailAddress}}</a></p>
+      <p><a href="{{website}}">{{website}}</a></p>
+      <hr />
+      <h2>Mission</h2>
+      <div>{{mission}}</div>
+      <hr />
+      <h2>Work History</h2>
+      <p>{{employer}}</p>
+      <p>{{location}}</p>
+      <p>{{time}}</p>
+      <p>{{shortDescription}}</p>
+      <p>{{jobTitle}}</p>
+      <div>{{jobDesc}}</div>
+      <hr />
+      <input type="button" value="Print this page" onClick="window.print()">
+    </div>
+  </div>
+  
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="script2.js"></script>
+</body>
+</html>
