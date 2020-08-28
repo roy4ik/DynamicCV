@@ -8,12 +8,16 @@
 
 
 /* about container */
+
 #aboutContainer2{
     /* margin-top: 2em; */
 }
 #aboutContainer3{
     /* margin-top: 2em; */
     color: var(--third-color);
+    padding-top: 1em;
+    padding-bottom:1em ;
+    text-decoration: underline;
 }
 
 /* Iframe 1 */
