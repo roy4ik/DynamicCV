@@ -26,7 +26,7 @@ aboutContainer3.style.height = "fit-content";
 
 
 
-aboutContainer1.style.marginBottom = "20px"
+// aboutContainer1.style.marginBottom = "20px"
 
 aboutContainer1.style.display = "inline-flex"
 aboutContainer2.style.display = "inline-flex"
@@ -66,7 +66,7 @@ aboutNewDiv2.style.margin = "20px"
 
 aboutNewDiv1.innerHTML = "<img id='aboutLogo' src='img/logo.svg' alt='logo'>"
 aboutNewDiv2.innerHTML = "\
-<h1>About</h1>\
+<h1><u>About</u></h1>\
 <p>We created this webApp in our 1st ever Hackathon, we are 2 passionated Developers, from Belgium and Switzerland, currently living in Tel Aviv. We both decided to change our carriere path doing the Full Stack Developer Bootcamp with the Developers Institute. This is can be used to create nice CV very easely and print it afterward. So here we are HAPPY to present the very first version of our site. Hope you like it ❤️ <br> Th Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!orem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa! </p>\
 <section class='white-section' id='features'>\
     <div class='container-fluid'>\
