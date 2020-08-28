@@ -169,6 +169,7 @@ footer {
     #aboutContainer2 {
         display: flex;
         flex-direction: column;
+        height: unset !important;
         /* height: unset !important; */
     }
     #aboutContainer3 {
@@ -178,7 +179,6 @@ footer {
         bottom: unset;
     }
     #card-daniel {
-        margin-top: 20em;
         max-width: unset !important;
     }
     #card-roy {
