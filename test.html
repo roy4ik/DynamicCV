@@ -12,7 +12,7 @@
 <div ng-app data-ng-init="name='Ryan Trimble'">
 
     <div class="col1">
-      <h1>Resume Builder</h1>
+      <h1><u>Resume Builder</u> </h1>
       <h3>Choose Theme</h3>
       <input type="radio" name="theme" ng-model="theme" value="default" selected checked>Default<br />
       
@@ -20,7 +20,6 @@
       <input type="text" ng-model="yourName" data-ng-bind="name" placeholder="Name" value="Ryan Trimble" class="floatlabel">
       <input type="text" ng-model="streetAddress" placeholder="Street Address" class="floatlabel">
       <input type="text" ng-model="city" placeholder="City" class="floatlabel">
-      <input type="text" ng-model="state" placeholder="State" class="floatlabel">
       <input type="text" ng-model="phoneNumber" placeholder="Phone Number" class="floatlabel">
       <input type="text" ng-model="emailAddress" placeholder="Email Address" class="floatlabel">
       <input type="text" ng-model="website" placeholder="Website" class="floatlabel">
@@ -34,6 +33,11 @@
       <input type="text" ng-model="time" placeholder="Time" class="floatlabel">
       <input type="text" ng-model="shortDescription" placeholder="Short Description" class="floatlabel">
       <input type="text" ng-model="jobTitle" placeholder="Job Title" class="floatlabel">
+      <button type="button" onclick="addWorkSection()"></button>
+      
+      <h3>Skills</h3>
+      <input type="text" ng-model="Skill" placeholder="Enter your Skills" class="floatlabel">
+      
       <h3>Job description</h3>
       <textarea ng-model="jobDesc" placeholder="Job Description" class="floatlabel"> </textarea>
       

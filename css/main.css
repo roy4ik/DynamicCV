@@ -142,6 +142,9 @@ footer {
         text-align: center;
         height: unset !important;
     }
+    #aboutLogo{
+        margin-left: unset !important;
+    }
     #aboutContainer2 {
         display: flex;
         flex-direction: column;
