@@ -1,3 +1,15 @@
+/* Root Colors */
+:root {
+  --main-bg-color: #ececec;
+  --main-color: #ff7171;
+  --second-color: #ffaa71;
+  --third-color: #343a40;
+}
+
+
+body{
+  background-color:var(--third-color); 
+}
 input{
     border:0;
     width:100%;

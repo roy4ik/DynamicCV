@@ -5,6 +5,10 @@
     --second-color: #ffaa71;
     --third-color: #343a40;
 }
+/* Iframe 1 */
+#iFrame1{
+    height: 100em;
+}
 /* Contact form */
 #contact .card:hover i,#contact .card:hover h4{
 	color: #87d37c;

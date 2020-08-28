@@ -13,7 +13,7 @@ appContainer1.style.color="var(--main-bg-color)"
 appContainer1.id = 'appContainer1';
 
 appSectionContainer.innerHTML="\
-<iframe id='inlineFrameExample'\
+<iframe id='iFrame1'\
     title='Inline Frame Example'\
     width='100%'\
     border='none'\
