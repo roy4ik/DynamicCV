@@ -67,10 +67,19 @@ aboutNewDiv2.style.margin = "20px"
 aboutNewDiv1.innerHTML = "<img id='aboutLogo' src='img/logo.svg' alt='logo'>"
 aboutNewDiv2.innerHTML = "\
 <h1><u>About</u></h1>\
-<p>We created this webApp in our first ever Hackathon, we are two passionated Developers, from Belgium and Switzerland, currently living in Tel Aviv.<br>\
-We both decided to change our carriere path doing the Full Stack Developer Bootcamp with the Developers Institute. This can be used to create nice CV very easily and print it afterward.<br>\
-So here we are HAPPY to present the very first version of our site. <br>\
-Hope you will like it ❤️ <br> Th Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!orem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sed, sit tempora inventore quos autem sapiente optio reprehenderit maxime commodi nobis mollitia saepe facilis accusantium vero sequi illum soluta ipsa! </p>\
+<p>We are two passionate web developers from Belgium and Israel, currently located in Tel Aviv.\
+ This webApp is part of our first ever Hackathon. <br>\
+We both decided to change our career paths by doing the Full Stack Developer Bootcamp with the Developers Institute. \
+The intent of this DynamicCV is to easily create and print a correctly formatted CV to be print and download ready.<br>\
+<br>\
+We are EXCITED to present the very first version (0.01) DynamicCV! <br>\
+During the development of this first version we have spent about 30 hours net coding each, including 3 feature pivots, for features that cannot be included in version 0.1 due to its technical extent and requirements.<br>\
+<h2>Technology</h2><br>\
+<p>This projects was built with a main emphasis on vanilla java-script, Bootstrap, and some jquery helpers</p>\
+<br>\
+<h2>Highlights</h2><br>\
+<p>This is a one page app, scripts are loaded by a script function according to the app sections available on the page, which allows for quick development and troubleshooting</p>\
+<p>The entire app is accessed from one url, or in other words, only one html document is loaded for the entirety of the page.</p>\
 <section class='white-section' id='features'>\
     <div class='container-fluid'>\
       <div class='row row-features'>\
