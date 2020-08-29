@@ -1,52 +1,70 @@
 /* Root Colors */
+
 :root {
     --main-bg-color: #ececec;
     --main-color: #ff7171;
     --second-color: #ffaa71;
     --third-color: #343a40;
 }
+
+
 /* Contact form */
-#contact .card:hover i,#contact .card:hover h4{
-	color: #87d37c;
+
+#contact .card:hover i,
+#contact .card:hover h4 {
+    color: #87d37c;
 }
+
 .contact-form {
-    margin-top:70px;
+    margin-top: 70px;
 }
-#contact{
+
+#contact {
     padding-top: 2em !important;
-    padding-bottom:1em !important;
+    padding-bottom: 1em !important;
     text-align: center;
 }
-#message{
-    margin-top:2em ;
+
+#message {
+    margin-top: 2em;
 }
-#anchor26{
-    color:var(--main-bg-color);
+
+#anchor26 {
+    color: var(--main-bg-color);
     text-decoration: none;
 }
-.form1{
+
+.form1 {
     margin-top: -6.5em;
 }
+
+
 /* Logo DynamicCV */
+
 #logo-bg {
     fill: green;
 }
+
+
 /* Font awesome logos + hover */
-#bullseye{
+
+#bullseye {
     padding-left: 2m !important;
     padding-right: 2em;
 }
+
 .icon-features {
     margin-bottom: 1rem;
-  }
-  
-  .icon-features:hover {
+}
+
+.icon-features:hover {
     color: var(--main-color);
-  }
-  .container-fluid{
+}
+
+.container-fluid {
     padding: 3% 15% 7%;
     text-align: center;
-  }
+}
 
 #card-daniel {
     text-align: right;
@@ -80,6 +98,7 @@ footer {
     margin: 1em;
     /* margin-left: 100%; */
 }
+
 
 /* .multiselect-input {
     margin-left: 100% !important;
@@ -127,10 +146,14 @@ footer {
 .btn-outline-secondary {
     background-color: var(--second-color);
 }
+
+
 /* FONT */
+
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Oswald:wght@300;400&display=swap');
 
 /* RESPONSIVENESS */
+
 @media only screen and (max-width: 765px) {
     #aboutContainer1 {
         display: flex;

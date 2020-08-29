@@ -1,4 +1,3 @@
-appSectionContainer.appendChild(inputFormContainer);
 if (document.getElementsByClassName("inputFormContainer").length > 0) {
     console.log("inputSectionContainer added")
 } else {
