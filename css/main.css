@@ -1,4 +1,5 @@
 /* Root Colors */
+
 :root {
     --main-bg-color: #ececec;
     --main-color: #ff7171;
@@ -6,65 +7,91 @@
     --third-color: #343a40;
 }
 
+.about {
+    transition: fadeInRight 2s;
+}
+
+.app {
+    transition: fadeInLeft 2s;
+}
+
 
 /* about container */
 
-#aboutContainer2{
+#aboutContainer2 {
     /* margin-top: 2em; */
 }
-#aboutContainer3{
+
+#aboutContainer3 {
     /* margin-top: 2em; */
     color: var(--third-color);
     padding-top: 1em;
-    padding-bottom:1em ;
+    padding-bottom: 1em;
     text-decoration: underline;
 }
 
+
 /* Iframe 1 */
-#iFrame1{
+
+#iFrame1 {
     height: 100em;
 }
+
+
 /* Contact form */
-#contact .card:hover i,#contact .card:hover h4{
-	color: #87d37c;
+
+#contact .card:hover i,
+#contact .card:hover h4 {
+    color: #87d37c;
 }
+
 .contact-form {
-    margin-top:70px;
+    margin-top: 70px;
 }
-#contact{
+
+#contact {
     padding-top: 2em !important;
-    padding-bottom:1em !important;
+    padding-bottom: 1em !important;
     text-align: center;
 }
-#message{
-    margin-top:2em ;
+
+#message {
+    margin-top: 2em;
 }
-#anchor26{
-    color:var(--main-bg-color);
+
+#anchor26 {
+    color: var(--main-bg-color);
     text-decoration: none;
 }
-.form1{
+
+.form1 {
     margin-top: -6.5em;
 }
+
+
 /* Logo DynamicCV */
+
 #logo-bg {
     fill: green;
 }
+
+
 /* Font awesome logos + hover */
-#bullseye{
-    
-}
+
+#bullseye {}
+
 .icon-features {
     margin-bottom: 1rem;
-  }
-  
-  .icon-features:hover {
+}
+
+.icon-features:hover {
     color: var(--main-color);
-  }
-  .container-fluid{
+}
+
+.container-fluid {
     padding: 3% 15% 7%;
     text-align: center;
-  }
+}
 
 #card-daniel {
     color: var(--third-color);
@@ -72,13 +99,13 @@
     margin-left: auto;
     border-radius: 0;
     border: none;
-    
     /* margin-top: 1em; */
 }
-#card-roy{
+
+#card-roy {
     color: var(--third-color);
     border-radius: 0;
-    border-top:none ;
+    border-top: none;
     border-bottom: none;
     border-left: none;
     /* margin-top: 1em; */
@@ -111,6 +138,7 @@ footer {
     margin: 1em;
     /* margin-left: 100%; */
 }
+
 
 /* .multiselect-input {
     margin-left: 100% !important;
@@ -158,10 +186,14 @@ footer {
 .btn-outline-secondary {
     background-color: var(--second-color);
 }
+
+
 /* FONT */
+
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Oswald:wght@300;400&display=swap');
 
 /* RESPONSIVENESS */
+
 @media only screen and (max-width: 765px) {
     #aboutContainer1 {
         display: flex;
@@ -169,7 +201,7 @@ footer {
         text-align: center;
         height: unset !important;
     }
-    #aboutLogo{
+    #aboutLogo {
         margin-left: unset !important;
     }
     #aboutContainer2 {
@@ -189,5 +221,27 @@ footer {
     }
     #card-roy {
         max-width: unset !important;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(0%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
     }
 }

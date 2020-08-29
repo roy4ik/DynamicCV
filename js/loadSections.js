@@ -6,6 +6,7 @@ let mainContainer = document.getElementsByTagName("main")[0];
 // sectionContainer - required to toggle without changing main
 let aboutSectionContainer = document.createElement("div");
 aboutSectionContainer.className = "about";
+aboutSectionContainer.classList.add("")
 mainContainer.appendChild(aboutSectionContainer);
 
 let appSectionContainer = document.createElement("div");
