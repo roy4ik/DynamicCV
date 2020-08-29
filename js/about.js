@@ -125,7 +125,7 @@ aboutContainer2.innerHTML = "\
   <div class='col-md-8'>\
     <div class='card-body'>\
       <h5 class='card-title'>Daniel Ach</h5>\
-      <p class='card-text'>I am a Beginner Full Stack Developer at the <u>Developers Institute</u>, I am doing theatre and acting in Hebrew, English and French, and I have worked 2 years as a Bartender, Waiter and Barista in a very nice hotel in Jaffa.</p>\
+      <p class='card-text'>I am Junior Full-Stack Engineer at the <u>Developers Institute</u>, I am doing theatre and acting in Hebrew, English and French, and I have worked 2 years as a Bartender, Waiter and Barista in a very nice hotel in Jaffa.</p>\
       <p class='card-text'><small class='text-muted'>Last updated 3 mins ago</small></p>\
     </div>\
   </div>\
