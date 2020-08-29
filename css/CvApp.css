@@ -29,10 +29,10 @@ input {
     border: 0;
     width: 100%;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 0 10px;
     border-bottom: 1px solid black;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     outline: none;
     font-family: "Roboto";
     font-size: 15px;
@@ -78,13 +78,6 @@ textarea {
     padding: 0 10px;
 }
 
-.container {
-    /* width:100%;
-    height:100vh;
-    overflow:hidden;
-    margin:0 auto; */
-}
-
 div {
     display: flex;
     flex-direction: row;
@@ -100,7 +93,7 @@ div {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     padding-bottom: 25px;
 }
 
@@ -108,14 +101,14 @@ h1,
 h2,
 h3 {
     font-family: "Roboto";
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-weight: bold;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
-.default {
+.col2 {
     display: grid;
-    grid-template-areas: "profile" "experience" "education" "skills" "licenses"!important;
+    grid-template-areas: "profile" "experience" "education" "skills" "licenses";
 }
 
 .secondary {
@@ -140,97 +133,7 @@ h3 {
 /**THEMES**/
 
 .default {
-    padding: 25px;
-}
-
-h1 {
-    font-size: 3em;
-    font-family: "Ovo";
-    text-align: center;
-}
-
-h2 {
-    font-size: 1.5em;
-    font-family: "Ovo";
-    text-align: center;
-    padding-top: 25px;
-}
-
-hr {
-    width: 80%;
-    border: 1px solid #000;
-}
-
-p {
-    font-size: 1.1em;
-    text-align: center;
-    font-family: "Muli";
-    padding-top: 10px;
-}
-
-a {
-    color: #000;
-    text-decoration: none;
-}
-
-div {
-    background: #FFF;
     padding: 10px;
-    font-size: 1.1em;
-    font-family: "Muli";
-    width: 80%;
-    margin: 0 auto;
-    line-height: 1.5;
-    letter-spacing: 1.5px;
-}
-
-
-/***FANCY THEM***/
-
-.fancy {
-    padding: 25px;
-}
-
-h1 {
-    font-size: 3em;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
-    text-align: center;
-}
-
-h2 {
-    font-size: 1.5em;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 25px;
-}
-
-hr {
-    width: 80%;
-    border-top: 1px solid #000;
-    border-bottom: 0;
-}
-
-p {
-    font-size: 1.1em;
-    text-align: center;
-    font-family: "Lora";
-    padding-top: 10px;
-}
-
-a {
-    color: #000;
-    text-decoration: none;
-}
-
-div {
-    background: #FFF;
-    padding: 10px;
-    font-size: 1.1em;
-    font-family: "Lora";
-    width: 80%;
-    margin: 0 auto;
 }
 
 
@@ -288,7 +191,7 @@ div {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2em;
     font-family: "Oxygen";
     text-align: center;
 }

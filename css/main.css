@@ -15,13 +15,6 @@
     transition: fadeInLeft 2s;
 }
 
-
-/* about container */
-
-#aboutContainer2 {
-    /* margin-top: 2em; */
-}
-
 #aboutContainer3 {
     /* margin-top: 2em; */
     color: var(--third-color);
@@ -34,7 +27,7 @@
 /* Iframe 1 */
 
 #iFrame1 {
-    height: 100em;
+    height: 100vh;
 }
 
 
@@ -77,8 +70,6 @@
 
 
 /* Font awesome logos + hover */
-
-#bullseye {}
 
 .icon-features {
     margin-bottom: 1rem;

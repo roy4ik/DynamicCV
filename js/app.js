@@ -16,7 +16,8 @@ appSectionContainer.innerHTML = "\
     title='Inline Frame Example'\
     width='100%'\
     border='none'\
-    min-height='100%'\
+    overflow:'hidden'\
+    max-height='80vh'\
     src='CvApp.html'>\
 </iframe>\
 "
