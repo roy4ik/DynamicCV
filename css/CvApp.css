@@ -113,9 +113,9 @@ h3 {
     padding-top: 5px;
 }
 
-.default {
+.col2 {
     display: grid;
-    grid-template-areas: "profile" "experience" "education" "skills" "licenses"!important;
+    grid-template-areas: "profile" "experience" "education" "skills" "licenses";
 }
 
 .secondary {
